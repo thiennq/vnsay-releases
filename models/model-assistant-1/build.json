@@ -1,0 +1,5 @@
+{
+  "recipe": "text_encoder=int4 prefix_step=int4 local_frame_decode=int8 block=32 sym acc=4 keep_fp32=/lm_head/MatMul emb=fp16 shared",
+  "backend": "ggml",
+  "gguf_format": 2
+}

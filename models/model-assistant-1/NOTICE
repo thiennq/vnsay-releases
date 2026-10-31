@@ -1,0 +1,28 @@
+ZeroTTS assistant model, ggml build
+Copyright (c) 2026 ZeroWeight AI
+Licensed under the MIT License (see LICENSE).
+
+These files are the "assistant" preset of ZeroTTS (huggingface.co/zeroweight-ai/ZeroTTS)
+converted for its native ggml runtime by the zerotts Python package
+(github.com/zeroweight-ai/ZeroTTS: src/zerotts/quant_presets.py,
+src/zerotts/gguf_convert.py), with weights stored at reduced precision or
+quantized as the preset's recipe says:
+
+  text_encoder=int4 prefix_step=int4 local_frame_decode=int8 block=32 sym acc=4 keep_fp32=/lm_head/MatMul emb=fp16 shared
+
+------------------------------------------------------------------------------
+
+MOSS-Audio-Tokenizer-Nano
+Copyright the OpenMOSS Team.
+Licensed under the Apache License, Version 2.0.
+Full text: LICENSES/MOSS-Audio-Tokenizer-Apache-2.0.txt
+
+ggml/model.gguf contains a converted copy of the weights of
+MOSS-Audio-Tokenizer-Nano's decoder: the codebooks, out-projections and
+transformer blocks read out of its decode_step graph, repacked as GGUF tensors
+and possibly stored at reduced precision or quantized. This converted decoder
+is a modified form of MOSS-Audio-Tokenizer-Nano and remains under the Apache
+License, Version 2.0. The encoder is not included.
+
+  Upstream: https://github.com/OpenMOSS/MOSS-Audio-Tokenizer
+            https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano-ONNX

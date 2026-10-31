@@ -1,0 +1,23 @@
+{
+ "format": "zerotts-split/1",
+ "name": "model.gguf",
+ "size": 203125568,
+ "sha256": "1c4d4602df97a8088fd0237c69e83274fe7b65163bfc43edcf288a0beee2510f",
+ "parts": [
+  {
+   "path": "model.gguf.part-000",
+   "size": 95000000,
+   "sha256": "b79428fad6e26d7161b5440fb6336790c27ff742846f785fea869f5228fc6c8c"
+  },
+  {
+   "path": "model.gguf.part-001",
+   "size": 95000000,
+   "sha256": "e592480c8037ea6e901b923cbdd21c561007b5849e1716cd9c25d48ae55a4e05"
+  },
+  {
+   "path": "model.gguf.part-002",
+   "size": 13125568,
+   "sha256": "6503156c2dae609bc131a7c1c3c0eb2fdb1ec7bfdf20a6678009aad10c3b2d31"
+  }
+ ]
+}
